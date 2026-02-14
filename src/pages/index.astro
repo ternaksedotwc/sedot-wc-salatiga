@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Jasa Sedot WC SALATIGA Profesional | Respon Cepat 24 Jam',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Rating 5.0 ⭐⭐⭐⭐⭐ Terpercaya di SALATIGA"
+    actions={[{ variant: 'primary', text: 'WhatsApp Kami', href: 'https://wa.me/6289519865963', icon: 'tabler:brand-whatsapp' }]}
+  >
+    <div slot="title">Sedot WC <span class="text-accent">SALATIGA</span></div>
+    <div slot="subtitle">Solusi Tuntas Septic Tank Penuh & Saluran Mampet. Melayani Area SALATIGA dan Sekitarnya dengan Harga Murah & Bergaransi.</div>
+  </Hero>
+
+  <Features2
+    title="Mengapa Memilih Kami?"
+    items={[
+      { title: 'Tenaga Ahli', description: 'Tim berpengalaman puluhan tahun.', icon: 'tabler:users' },
+      { title: 'Harga Nego', description: 'Harga transparan dan bisa nego di lokasi.', icon: 'tabler:coin' },
+      { title: 'Respon Cepat', description: 'Armada siaga 24 jam di SALATIGA.', icon: 'tabler:rocket' },
+      { title: 'Selang 200m', description: 'Menjangkau gang sempit dan perumahan.', icon: 'tabler:ruler' },
+      { title: 'Tanpa Bongkar', description: 'Proses bersih tanpa merusak bangunan.', icon: 'tabler:tool' },
+      { title: 'Garansi Tuntas', description: 'Pekerjaan dijamin lancar kembali.', icon: 'tabler:shield-check' },
+    ]}
+  />
+
+  <CallToAction
+    title="WC Mampet di "
+    subtitle="Hubungi kami sekarang sebelum meluber! Layanan darurat 24 jam."
+    actions={[{ variant: 'primary', text: 'Pesan Sekarang', href: 'tel:+6289519865963', icon: 'tabler:phone' }]}
+  />
+</Layout>
